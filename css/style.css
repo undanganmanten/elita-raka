@@ -410,10 +410,27 @@ img{
   align-items: center;
 }
 
+.groom{
+  margin-top: 50px;
+}
+
+.bride-groom .bride .elita-photo a img, 
+.bride-groom .groom .raka-photo a img{
+  width: 40px;
+  height: 40px;
+} 
+
+.elita-photo, .raka-photo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+
 .elita-photo img, .raka-photo img{
   width: 260px;
-  height: 260px;
-  margin-bottom: 50px;
+  height: 220px;
+  /* background-color: thistle; */
 }
 
 #counting{
@@ -667,14 +684,15 @@ img{
   font-size: 30px;
   margin: 20px;
   letter-spacing: 5px;
-  color: black; 
+  color: #484272; 
 }
 
 .rsvp .rsvp-title p{
-  font-size: 13px;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
   padding: 0 40px;
-  line-height: 20px;
-  color: black;
+  line-height: 25px;
+  color: #484272;
 }
 
 .form-rsvp{
@@ -686,8 +704,8 @@ img{
   width: 100%;
   height: 35px;
   background: transparent;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #484272;
+  color: #484272;
   font-family: 'Josefin Sans',sans-serif;
   margin-top: 10px;
 }
@@ -718,7 +736,7 @@ input[type="radio"] {
     cursor: pointer;
     line-height: 20px;
     display: flex;
-    color: black;
+    color: #484272;
 }
 
 [type="radio"]:checked + label:before,
@@ -729,7 +747,7 @@ input[type="radio"] {
     top: 0;
     width: 18px;
     height: 18px;
-    border: 1px solid #01a4df;
+    border: 1px solid #484272;
     border-radius: 100%;
     background: white;
 }
@@ -739,7 +757,7 @@ input[type="radio"] {
     content: '';
     width: 12px;
     height: 12px;
-    background: #01a4df;
+    background: #484272;
     position: absolute;
     top: 4px;
     left: 4px;
@@ -764,17 +782,17 @@ input[type="radio"] {
   width: 100%;
   height: 40px;
   background: transparent;
-  border: black 1px solid ;
+  border: #484272 1px solid ;
   font-size: 18px !important;
   font-family: 'Josefin Sans',sans-serif !important;
   margin-bottom: 0;
   cursor: pointer;
-  color: black;
+  color: #484272;
   margin-top: 10px;
 }
 
 .btn-loading .buttonload {
-  background-color: #00bddf;
+  background-color: #484272;
   border: none;
   color: white;
   padding: 12px 16px;
@@ -819,8 +837,9 @@ input[type="radio"] {
 .box p{
   color: #484272;
   text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:'Playfair Display', serif;
   padding: 0 20px 10px 20px;
+  font-size: 15px!important;
 }
 
 .box button{

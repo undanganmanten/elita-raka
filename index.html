@@ -40,7 +40,7 @@
     </div>
     
     <audio id="song" hidden loop> 
-        <source src="asset/audio/i.mp3" type="audio/mpeg">
+        <!-- <source src="asset/audio/i.mp3" type="audio/mpeg"> -->
     </audio>
     
     <div id="top">
@@ -88,12 +88,18 @@
             <div class="bride">
                 <div class="elita-photo" data-aos="fade-right" data-aos-duration="3000">
                     <img src="asset/image/Elita.png" alt="">
+                    <a href="https://instagram.com/elitarezisafira" target="_blank">
+                        <img src="asset/image/ig.png" alt=""> 
+                    </a>
                 </div>
             </div>
             <div class="groom">
                 <div class="raka-photo" data-aos="fade-down" data-aos-duration="3000">
                     <img src="asset/image/Raka.png" alt="">
-                </div>
+                    <a href="https://instagram.com/asadullahraka" target="_blank">
+                        <img src="asset/image/ig.png" alt="">
+                    </a>
+                </div>  
             </div>
         </div>
     </section>
@@ -191,7 +197,7 @@
           </div>
     </div> -->
     
-    <!-- <div class="rsvp" data-aos="fade-up" data-aos-duration="3000">
+    <div class="rsvp" data-aos="fade-up" data-aos-duration="3000">
         <div class="rsvp-title">
             <h2>RSVP</h2>
             <p>Kami tidak sabar menunggu hari pernikahan kami bersama Bapak/Ibu/Saudara/i, mohon konfirmasi kehadiran Bapak/Ibu/Saudara/i.</p>
@@ -200,9 +206,9 @@
         <div class="form-rsvp">
             <form name="rsvp-Elita-Raka">
                 <div class="form-elements">
-                    <input id="nama" name="Nama" placeholder="Nama anda" required />
+                    <input id="nama" name="Nama" placeholder=" Nama anda" required />
                     <br>
-                    <input id="alamat" name="Alamat" placeholder="Alamat anda" required/>
+                    <input id="alamat" name="Alamat" placeholder=" Alamat anda" required/>
                     <br>
                     <div class="hadir-confirm">
                         <p>
@@ -212,7 +218,7 @@
                             <label for="kehadiran1">Tidak Hadir</label>
                         </p>                        
                     </div>
-                   anu <input id="kehadiran" name="Kehadiran" required placeholder="Apakah anda bisa menghadiri acara atau tidak?" />
+                   <!-- anu <input id="kehadiran" name="Kehadiran" required placeholder="Apakah anda bisa menghadiri acara atau tidak?" /> -->
                     <div class="btn">
                         <button type="submit" class="buttonkirim">Send</button>
                     </div>
@@ -224,7 +230,7 @@
                 </div>
             </form>
         </div>
-    </div> -->
+    </div>
 
     
 
@@ -433,7 +439,7 @@
             grabCursor: true,
         });
     
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzb9I2p0rxHEyNMFAhZvPVBn434rJVRrqTBZucO0b3oPK_bd_JjkcCdil8TVbkHAbbDbA/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzZHSzB2-IIX10KJhqWGy4WFML4S-VV3HDW88rKS68RdtKLIhhpFM1juRbJuQ-W-D7onQ/exec'
         const form = document.forms['rsvp-Elita-Raka']
         const btnLoading = document.querySelector('.buttonload');
         const btnKirim = document.querySelector('.buttonkirim');
