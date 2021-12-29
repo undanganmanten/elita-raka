@@ -534,6 +534,7 @@ img{
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1 !important;
 }
 
 .date .ornamen-date img{
@@ -590,6 +591,10 @@ img{
 .location a img{
   width: 130px;
   margin: 20px 0;
+}
+
+.date .location a{
+  z-index: 1;
 }
 
 .sorry-protokol{ 
