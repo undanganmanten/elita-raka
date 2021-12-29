@@ -102,7 +102,7 @@ var firebaseConfig = {
   
     if(input_box.value.length != 0 && input_date.value.length != 0){
       // our boxes have data and we take database
-      var key = firebase.database().ref().child("devy").push().key;
+      var key = firebase.database().ref().child("elita").push().key;
       var task = {
         ucapan: input_box.value,
         nama: input_date.value,
@@ -110,12 +110,16 @@ var firebaseConfig = {
       };
   
       var updates = {};
-      updates["/devy/" + key] = task;
+      updates["/elita/" + key] = task;
       firebase.database().ref().update(updates);
       create_unfinished_task();
       swal("Pesan telah terkirim", "Silakan cek pesan anda di kolom yang sudah ada", "success");
       input_box.value='';
       input_date.value='';
+      // setTimeout(function(){
+      //   input_box.value='..';
+      //   input_date.value='..';
+      // }, 1); 
     }
   }
 
@@ -125,7 +129,7 @@ function create_unfinished_task(){
     unfinished_task_container.innerHTML = "";
   
     task_array = [];
-    firebase.database().ref("devy").once('value', function(snapshot) {
+    firebase.database().ref("elita").once('value', function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
         var childKey = childSnapshot.key;
         var childData = childSnapshot.val();

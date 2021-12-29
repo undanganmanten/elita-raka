@@ -388,7 +388,7 @@ img{
 
 .content-isra h3 b,
 .content-isra p{
-  color: black;
+  color: #484272;
   font-family: 'Playfair Display', serif;
   font-size: 15px;
   line-height: 25px;
@@ -510,6 +510,19 @@ img{
 
 .date{
   margin: 50px 0;
+  position: relative;
+}
+
+.date .ornamen-date{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.date .ornamen-date img{
+  width: 100%;
+  height: 850px;
+  /* background-color: aquamarine; */
 }
 
 .date .save-the-date,
@@ -519,7 +532,14 @@ img{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 90%;
+}
+
+.date .save-the-date img,
+.date .text-date img,
+.date .location img,
+.date .text-date p{
+  margin-left: 150px;
 }
 
 .text-date{
@@ -527,7 +547,7 @@ img{
 }
 
 .text-date img{
-  width: 200px;
+  width: 150px;
 }
 
 .text-date .line-date img{
@@ -536,16 +556,18 @@ img{
 
 .text-date p{
   margin: 10px 0;
-  color: black;
-  font-family: 'Playfair Display', serif; 
+  color: #484272;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; 
 }
 
 .save-the-date img{
-  width: 250px;
+  margin-top: 140px;
+  width: 100px;
 }
 
 .location img{  
-  width: 300px;
+  width: 240px;
 }
 
 .location a img{
@@ -576,6 +598,7 @@ img{
 }
 
 .protokol img{ 
+  margin-top: 50px;
   width: 90%;
   height: 320px;
 }
@@ -789,12 +812,12 @@ input[type="radio"] {
   font-family: 'christmas';
   letter-spacing: 5px;
   font-weight: lighter;
-  color: black;
+  color: #484272;
   margin-top: 100px;
 }
 
 .box p{
-  color: black;
+  color: #484272;
   text-align: center;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   padding: 0 20px 10px 20px;
@@ -804,17 +827,17 @@ input[type="radio"] {
   width: 100%;
   height: 40px;
   background: transparent;
-  border: black 1px solid ;
+  border: #484272 1px solid ;
   font-size: 20px;
   font-family: 'Redressed', cursive;
   margin-bottom: 20px;
   cursor: pointer;
-  color: black;
+  color: #484272;
 }
 
 .box button:hover{
-  background: black ;
-  color: black;
+  background: #484272 ;
+  color: white;
   transition: .5s;
 }
 
@@ -827,13 +850,13 @@ input[type="radio"] {
   margin-top: 100px;
   font-size: 20px;
   font-family: 'Mitr', sans-serif;
-  color: black;
+  color: #484272;
 }
 
 .thankyou h5{
   text-align: center;
   font-family: 'amalfi';
-  color: black;
+  color: #484272;
   font-size: 25px !important;
   font-weight: lighter;
   margin-top: 20px;
@@ -848,8 +871,8 @@ input[type="radio"] {
   width: 100%;
   height: 100px;
   background: transparent;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #484272;
+  color: #484272;
   font-family: 'Josefin Sans',sans-serif;
 }
 
@@ -858,7 +881,7 @@ input[type="radio"] {
 #nama::-webkit-input-placeholder,
 #alamat::-webkit-input-placeholder,
 #kehadiran::-webkit-input-placeholder{
-  color: black;
+  color: #484272;
 }
 
 .contact-us form #message{
@@ -867,7 +890,7 @@ input[type="radio"] {
 
 .contact-us form input:focus,
 .contact-us form #message:focus{
-  outline-color: black;
+  outline-color: #484272;
 }
 .contact-us form input{
   height: 35px;
@@ -879,7 +902,7 @@ input[type="radio"] {
 #input_button{
   height: 40px;
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #484272;
   background: transparent;
   font-size: 1.0625rem;
   font-weight: 500;
@@ -890,8 +913,8 @@ input[type="radio"] {
 }
 
 #input_button:hover{
-  background-color: black;
-  color:black;
+  background-color: #484272;
+  color:white;
 }
 
 #input_button:active{
@@ -917,7 +940,7 @@ input[type="radio"] {
 }
 
 .task_container:hover{
-  background-color: black;
+  background-color: #484272;
 }
 
 #task_data{
@@ -933,7 +956,7 @@ input[type="radio"] {
   width:100%;
   text-align: left;
   padding: 0;
-  color: black;
+  color: #484272;
 }
 
 #task_ucapan p{
@@ -947,7 +970,7 @@ input[type="radio"] {
   font-size:15px;
   font-weight: bold;
   padding-top: 5px;
-  color: black;
+  color: #484272;
 }
 
 .footer{
@@ -972,12 +995,12 @@ input[type="radio"] {
 }
 
 .footer p{
-  color: black;
+  color: #484272;
   z-index: 100;
 }
 
 .footer a{
-  color: black;
+  color: #484272;
   text-decoration: none;
   z-index: 100;
 }
